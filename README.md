@@ -1,3 +1,3 @@
 # Dev Environment Setup
 
-* [zshrc]()
+* [zshrc](docs/zshrc.md)
