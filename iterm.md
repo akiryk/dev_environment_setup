@@ -1,1 +1,1 @@
-<img src="https://photos.app.goo.gl/FyKTF1QJmESuEhVN7"/>
+<img src="https://photos.google.com/share/AF1QipNpJczKdd5TPYQtwyJ84e1DOwLS1HMZ2vgjLPB6djZyZcDKbmyDEoSnY9H5FOIzfw/photo/AF1QipPXTqDfido6lX_piaD42DqwmXacgZIh-6TKvLQu?key=eVk4bklnd1NfTGZHRThLU2QxSUZfeDRzODVSa2x3"/>
