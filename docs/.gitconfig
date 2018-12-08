@@ -1,0 +1,21 @@
+[user]
+	name = Adam Kiryk
+	email = akiryk@wayfair.com
+[color]
+	ui = true
+[pull]
+	rebase = true
+[push]
+	default = current
+[fetch]
+	prune = true
+[core]
+	autocrlf = false
+	preloadindex = true
+	editor = subl -n -w
+[log]
+	decorate = short
+[http]
+	sslVerify = false
+[pager]
+	branch = false
