@@ -19,6 +19,17 @@
 - Auto Close Tag
 - Sublime Text Keymap and Settings Importer
 
+## Code Formatting
+
+### .scss Files
+
+- Install Style Formatter by dweber
+- find settings to customize by seaching workspace preferences for `.sfmt`
+    - e.g. `"sfmt.noleadzero": true,`
+- Tell vscode to use Style Formatter as default for .scss files
+    - Right-click and select `format document with`
+    - Choose Style Formatter for default when using `.scss`
+    
 ## Snippets
 
 - `Command-Shift-P` and find Configure User Snippets
