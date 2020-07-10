@@ -20,12 +20,45 @@ To launch VS Code from the terminal, press `CMD + SHIFT + P`, type shell command
 ## Code Formatting
 
 ### Settings.json
+- eslint.run for only showing lint errors on save
+- search.exlude for not finding docs in a dist directory
 ```json
 {
-    "workbench.colorTheme": "Night Owl",
-    "editor.fontFamily": "Dank Mono",
-    "editor.fontSize": 18
-}
+  "workbench.colorTheme": "Night Owl",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 18,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.rulers": [200],
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.hotExit": "onExitAndWindowClose",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.eslintignore": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.vscode": true,
+    "**/resources/node_modules": true,
+    "**/node_scripts": true
+  },
+  "php-docblocker.useShortNames": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.sideBar.location": "right",
+  "eslint.run": "onSave",
+  "search.exclude": {
+    "**/dist": true
+  }
 ```
 
 ### .scss Files
