@@ -5,22 +5,14 @@ To launch VS Code from the terminal, press `CMD + SHIFT + P`, type shell command
 
 ## Extensions
 
-- CSS Language Features
-- Node Debug Auto-Attach
-- Emmet
-- Extension Authoring
-- Git
-- Merge Conflict
-- NPM Support for VS Code
-- Search Result
-- Account
-- Typescript and Javascript Language Features
-- Quit Control for VS Code ** So you don't accidentally quit out of VSCode
+- Indenticator
 - Bracket Pair Colorizer
+- TODO Highlight
+- PHP DocBlocker
+- PHP Intelephense
+- ESLint
 - Prettier Code Formatter
 - SCSS Formatter ** Great for applying prettier settings to scss
-- Auto Close Tag
-- Sublime Text Keymap and Settings Importer
 
 ## Code Formatting
 
@@ -48,12 +40,24 @@ To launch VS Code from the terminal, press `CMD + SHIFT + P`, type shell command
 - configure for javascript and javascript react and/or whatever file types you need
 
 ```js and jsreact
-"Simple gql template tag": {
-  "prefix": "qq",
-  "body": [
-    "gql`",
-    "	$1",
-    "`"
-  ]
-}
+// In javascript.json (not javascriptreact.json
+	"Simple gql template tag": {
+		"prefix": "qq",
+		"body": [
+		  "gql`",
+		  "	$1",
+		  "`"
+		]
+	},
+	"Comment block": {
+		"prefix": "cobo",
+		"body": [
+		  "/**",
+		  "* $1",
+		  "*",
+		  "* @author Adam Kiryk <akiryk@wayfair.com>",
+		  "* @copyright 2018 Wayfair LLC - All rights reserved",
+		  "*/"
+		]
+	}
 ```
