@@ -21,6 +21,15 @@
 
 ## Code Formatting
 
+### Settings.json
+```json
+{
+    "workbench.colorTheme": "Night Owl",
+    "editor.fontFamily": "Dank Mono",
+    "editor.fontSize": 18
+}
+```
+
 ### .scss Files
 
 - Install Style Formatter by dweber
