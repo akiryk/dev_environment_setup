@@ -1,5 +1,8 @@
 # VS Code
 
+## Set up 
+To launch VS Code from the terminal, press `CMD + SHIFT + P`, type shell command and select `Install code command in path`
+
 ## Extensions
 
 - CSS Language Features
