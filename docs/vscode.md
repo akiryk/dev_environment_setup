@@ -12,6 +12,9 @@ To launch VS Code from the terminal, press `CMD + SHIFT + P`, type shell command
 - PHP Intelephense
 - ESLint
 - Prettier Code Formatter
+- Quit Control for VSCode
+- Night Owl theme
+- Php Debug
 - SCSS Formatter ** Great for applying prettier settings to scss
 
 ## Code Formatting
