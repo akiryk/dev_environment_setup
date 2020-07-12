@@ -19,6 +19,14 @@ To launch VS Code from the terminal, press `CMD + SHIFT + P`, type shell command
 
 ## Code Formatting
 
+### Iterm Preferences
+In iTerm's Profiles > Advanced, set Semantic History to open links in VS Code.
+* In Semantic History, choose `open with editor`
+* Choose VS Code.
+
+### VS Code Preferences
+
+
 ### Settings.json
 - eslint.run for only showing lint errors on save
 - search.exlude for not finding docs in a dist directory
