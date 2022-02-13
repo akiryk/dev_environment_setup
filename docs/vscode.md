@@ -3,19 +3,25 @@
 ## Set up 
 To launch VS Code from the terminal, press `CMD + SHIFT + P`, type shell command and select `Install code command in path`
 
-## Extensions
-
+## Installed Extensions
+- Prettier
+- EsLint
+- Prettier Eslint
+- Git
+- GitHub
+- GitHub Authentication
+- Git History
 - Indenticator
 - Bracket Pair Colorizer
 - TODO Highlight
-- PHP DocBlocker
-- PHP Intelephense
-- ESLint
-- Prettier Code Formatter
-- Quit Control for VSCode
-- Night Owl theme
-- Php Debug
-- SCSS Formatter ** Great for applying prettier settings to scss
+- Quit Control
+
+## Included Extensions
+- Merge Conflict
+- Microsoft Account
+- Node Debug Autoattach
+- Git Base
+- 
 
 ## Code Formatting
 
