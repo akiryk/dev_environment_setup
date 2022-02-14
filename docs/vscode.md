@@ -15,6 +15,10 @@ To launch VS Code from the terminal, press `CMD + SHIFT + P`, type shell command
 - Bracket Pair Colorizer
 - TODO Highlight
 - Quit Control
+- PHP Language Features
+- PHP Debug
+- PHP DocBlocker
+- PHP Intelephense
 
 ## Included Extensions
 - Merge Conflict
