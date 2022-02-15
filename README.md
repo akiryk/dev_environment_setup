@@ -1,6 +1,4 @@
 # Dev Environment Setup
 
-* [zshrc](docs/zshrc.md)
-* [iterm](docs/iterm.md)
-
+[See the docs directory](https://github.com/akiryk/dev_environment_setup/tree/master/docs)
 
