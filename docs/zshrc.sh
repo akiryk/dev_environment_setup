@@ -12,7 +12,10 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # Aliases
-zshconfig="code ~/.zshrc"
+alias zshconfig="code ~/.zshrc"
+
+alias src="source ~/.zshrc"
+alias zshrc="nano ~/.zshrc"
 
 alias codebase="cd /Users/akiryk/codebase"
 alias pp="cd /Users/akiryk/codebase/php"
@@ -22,6 +25,7 @@ alias sfui="cd /Users/akiryk/codebase/sf-ui-registry"
 alias pdp="cd /Users/akiryk/codebase/sf-ui-product-details"
 alias browse="cd /Users/akiryk/codebase/sf-ui-browse"
 
+alias vs="code ."
 alias chrome="/Applications/Google\\ \\Chrome.app/Contents/MacOS/Google\\ \\Chrome"
 
 alias devbox="ssh dev-gcp"
@@ -39,6 +43,12 @@ alias gp="git push"
 # Aliases: Webpack
 alias bundleSize="yarn build --bundleAnalyzer"
 
+# functions
+rs() {
+    cd /Users/akiryk/codebase
+    realsync .
+}
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
@@ -55,7 +65,6 @@ export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
 alias pip=/usr/local/bin/pip3
 export RNDR_CLI_VM="akiryk_gcp_wayfair_com@webphp-akiryk-dsm1.c.wf-gcp-us-sds-prod.internal"
 export RNDR_VM="akiryk_gcp_wayfair_com@webphp-akiryk-dsm1.c.wf-gcp-us-sds-prod.internal"
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/akiryk/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/akiryk/google-cloud-sdk/path.zsh.inc'; fi
 
