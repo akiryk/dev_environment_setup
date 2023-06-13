@@ -13,3 +13,6 @@ Copy the contents of `iterm_key_bindings.itermkeymap`; save as `item_key_binding
 | description | type | action |
 | -- | -- | -- |
 |move right one word | send escape sequence| f |
+|move left one word | send escape sequence| b |
+|move right to end | send hex code| 0x05 |
+|move left to end | send hex code| 0x01 |
