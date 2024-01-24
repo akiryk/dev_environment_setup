@@ -42,11 +42,8 @@ In iTerm's Profiles > Advanced, set Semantic History to open links in VS Code.
 - search.exlude for not finding docs in a dist directory
 ```json
 {
-  "workbench.colorTheme": "Night Owl",
+{
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.fontFamily": "Dank Mono",
   "editor.fontSize": 18,
   "editor.fontLigatures": true,
@@ -60,7 +57,6 @@ In iTerm's Profiles > Advanced, set Semantic History to open links in VS Code.
   "files.hotExit": "onExitAndWindowClose",
   "files.exclude": {
     "**/.git": true,
-    "**/.gitignore": true,
     "**/.eslintignore": true,
     "**/.svn": true,
     "**/.hg": true,
@@ -70,13 +66,21 @@ In iTerm's Profiles > Advanced, set Semantic History to open links in VS Code.
     "**/resources/node_modules": true,
     "**/node_scripts": true
   },
-  "php-docblocker.useShortNames": true,
+  "git.decorations.enabled": false, // disable tabs from changing color based on git status
   "workbench.editor.enablePreview": false,
   "workbench.sideBar.location": "right",
-  "eslint.run": "onSave",
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#3b688e", // change color of selected tab
+    "tab.activeBorder": "#82AAFF",
+    "tab.activeForeground": "#D6DEEB", // change color of text in selected tab
+    "tab.inactiveForeground": "#86abc9"
+  },
   "search.exclude": {
     "**/dist": true
-  }
+  },
+  "workbench.colorTheme": "Night Owl"
+}
+
 ```
 
 ### .scss Files
