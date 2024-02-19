@@ -6,9 +6,10 @@ Copy the contents of `iterm_key_bindings.itermkeymap`; save as `item_key_binding
 
 
 1. Go to Preferences > Profile > Keys
-2. Click the plus icon to add a new map
-3. enter the shortcut you want (e.g. command shift right-arrow)
-4. enter the correct code (see below)
+2. Click on the action for the command + right arrow
+3. Select "Send Escape Sequence" for the Action
+4. Enter 'f'
+5. Continue with other settings using the blow table
 
 | description | type | action |
 | -- | -- | -- |
