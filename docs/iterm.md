@@ -6,7 +6,7 @@ Copy the contents of `iterm_key_bindings.itermkeymap`; save as `item_key_binding
 
 
 1. Go to Preferences > Profile > Keys
-2. Click on the action for the command + right arrow
+2. Under the "Key Mappings" section, click on the action for the command + right arrow
 3. Select "Send Escape Sequence" for the Action
 4. Enter 'f'
 5. Continue with other settings using the blow table
