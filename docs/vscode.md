@@ -6,26 +6,12 @@ To launch VS Code from the terminal, press `CMD + SHIFT + P`, type shell command
 ## Installed Extensions
 - Prettier
 - EsLint
-- Prettier Eslint
 - Git
 - GitHub
-- GitHub Authentication
-- Git History
-- Indenticator
-- Bracket Pair Colorizer
+- GitLens
 - TODO Highlight
-- Quit Control
-- PHP Language Features
-- PHP Debug
-- PHP DocBlocker
-- PHP Intelephense
-
-## Included Extensions
-- Merge Conflict
-- Microsoft Account
-- Node Debug Autoattach
-- Git Base
-- 
+- Quit Control for VS Codex
+- Stylelint	
 
 ## Code Formatting
 
@@ -42,8 +28,13 @@ In iTerm's Profiles > Advanced, set Semantic History to open links in VS Code.
 - search.exlude for not finding docs in a dist directory
 ```json
 {
-{
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
   "editor.fontFamily": "Dank Mono",
   "editor.fontSize": 18,
   "editor.fontLigatures": true,
@@ -52,11 +43,14 @@ In iTerm's Profiles > Advanced, set Semantic History to open links in VS Code.
   "editor.rulers": [200],
   "editor.minimap.enabled": true,
   "editor.minimap.renderCharacters": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.hotExit": "onExitAndWindowClose",
   "files.exclude": {
-    "**/.git": true,
+    "**/.git": false,
     "**/.eslintignore": true,
     "**/.svn": true,
     "**/.hg": true,
@@ -73,13 +67,22 @@ In iTerm's Profiles > Advanced, set Semantic History to open links in VS Code.
     "tab.activeBackground": "#3b688e", // change color of selected tab
     "tab.activeBorder": "#82AAFF",
     "tab.activeForeground": "#D6DEEB", // change color of text in selected tab
-    "tab.inactiveForeground": "#86abc9"
+    "tab.inactiveForeground": "#86abc9",
+    "terminal.background": "#01101c",
+    "panel.background": "#000910",
+    "panel.border": "#30516a"
   },
+  "terminal.integrated.fontSize": 15,
   "search.exclude": {
     "**/dist": true
   },
-  "workbench.colorTheme": "Night Owl"
+  "workbench.colorTheme": "Night Owl",
+  "svelte.enable-ts-plugin": true,
+  "window.confirmBeforeClose": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.enableSmartCommit": true
 }
+
 
 ```
 
