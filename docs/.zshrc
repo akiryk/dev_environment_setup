@@ -1,137 +1,70 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export ZSH="$HOME/.oh-my-zsh"
 
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/akiryk/.oh-my-zsh"
-
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# themes I like: jnrowe, miloshadzic, kennethreitz, eastwood, cloud, clean, af-magic, amuse, apple,
-# last tested: miloshadzic
+# Theme
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="miloshadzic"
 
-# Set list of themes to load
-# Setting this variable when ZSH_THEME=random
-# cause zsh load theme from this variable instead of
-# looking in ~/.oh-my-zsh/themes/
-# An empty array have no effect
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-)
+# Plugins
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
+# Aliases
+alias zshconfig="code ~/.zshrc"
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+alias src="source ~/.zshrc"
+alias zshrc="nano ~/.zshrc"
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+# Shell
+alias ls="ls -1"
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# Navigation
+alias codebase="cd /Users/adamkiryk/Documents/codebase"
+alias cb="cd /Users/adamkiryk/Documents/codebase"
+alias vs="code ."
+alias chrome="/Applications/Google\\ \\Chrome.app/Contents/MacOS/Google\\ \\Chrome"
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias sz="source ~/.zshrc"
-alias sublime="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-alias gotoSublimeSnippets="cd /Users/akiryk/Library/Application\ Support/Sublime\ Text\ 3/Packages/user"
-alias resources="cd ~/Documents/dev/resources"
-alias phpdir="cd ~/Documents/dev/php"
-alias dev="cd ~/Documents/dev"
-alias tuts="cd ~/Documents/tuts"
-
-# Git aliases
-alias branch="git checkout -b"
-alias gs="git status"
-alias gl="git log --oneline"
-alias gitdelete="git branch -D"
+# Git
+alias gdno="git diff --name-only"
+alias gc="git commit -am "
+alias gp="git push"
+alias logbyauthor="git log --author adamkiryk --pretty='%H - %an - %s %aD'"
+alias lba="git log --author=adamkiryk"
 alias gdel="git branch -D"
-alias gac="git add . && git commit -m"
-alias gcane="git commit --amend --no-edit"
-alias gacane="git add -A && git commit --amend --no-edit"
+alias gp="git push"
+alias gl="git log --oneline --graph --decorate --all"
+alias gs="git status"
 
-#
-alias runtw="npm run test-watch"
-alias hg="history | grep"
-alias css-reviews="node ./node_scripts/review.js open --team=frontend"
-alias xdb="bash ./.xdebug"
-alias chrome="open -a 'Google Chrome'"
-alias ...="cd ~/"
+# Aliases: Webpack
+alias bundleSize="yarn build --bundleAnalyzer"
 
-export PATH="/Users/akiryk/bin:$PATH"
+# functions
+rs() {
+    cd /Users/adamkiryk/codebase
+    realsync .
+}
 
-export FPATH="/Users/akiryk/.wf/zsh-completion:$FPATH"
-compinit
+gitgraph() {
+  git log --oneline --graph --decorate --all
+}
+
+zz() {
+  nano ~/.zshrc
+}
+
+zzv() {
+  code ~/.zshrc
+} 
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# volta is a tool for managing yarn and node versions
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
-mkcd () {
-  mkdir "$1"
-  cd "$1"
-}
+alias pip=/usr/local/bin/pip3
+
