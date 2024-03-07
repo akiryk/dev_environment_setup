@@ -9,6 +9,8 @@ To launch VS Code from the terminal, press `CMD + SHIFT + P`, type shell command
 - Git
 - GitHub
 - GitLens
+- GitBlame
+- Markdown Preview Enhanced
 - TODO Highlight
 - Quit Control for VS Codex
 - Stylelint	
